@@ -79,8 +79,8 @@ export function WebDevAnimation() {
             {[...Array(3)].map((_, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: [0, 1, 0], x: [0, 60, 60] }}
+                initial={{ opacity: 0, x: -300 }}
+                animate={{ opacity: [0, 1, 0], x: [-200, -100, 0] }}
                 transition={{
                   duration: 1.5,
                   delay: 1.5 + index * 0.2,
