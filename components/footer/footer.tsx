@@ -4,8 +4,15 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const footerLinks = {
-  Services: ["Web Design & Development", "Web Apps", "Mobile Apps", "AI Automation", "Chatbots"],
-  Company: ["Our Work", "Blog", "Contact"],
+  Shërbime: [
+    "Dizajn & Zhvillim Web",
+    "Aplikacione Web",
+    "Aplikacione Mobile",
+    "Automatizim me AI",
+    "Chatbot",
+    "SEO & Google Maps",
+  ],
+  Kompania: ["Punëtori", "Blog", "Kontakt"],
 }
 
 export function Footer() {
@@ -26,7 +33,7 @@ export function Footer() {
                 <Image src="/logo.png" alt="Wivo" width={400} height={160} className="h-28 w-auto brightness-0 invert" unoptimized />
               </div>
               <p className="text-background/60 text-sm leading-relaxed max-w-xs">
-                We design and build websites that help businesses grow. From idea to launch, we&apos;ve got you covered.
+                Dizajnojmë dhe ndërtojmë faqe interneti që ndihmojnë bizneset të rriten. Nga ideja deri te lansimi, ne kemi gjithçka.
               </p>
             </motion.div>
           </div>
@@ -61,7 +68,7 @@ export function Footer() {
         <div className="border-t border-background/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-background/50">
-              &copy; {new Date().getFullYear()} Wivo. All rights reserved.
+              &copy; {new Date().getFullYear()} Wivo. Të gjitha të drejtat e rezervuara.
             </p>
             <a
               href="mailto:hello@wivo.co"

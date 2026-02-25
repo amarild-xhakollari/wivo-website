@@ -8,109 +8,85 @@ const steps = [
   {
     number: "01",
     icon: MessageCircle,
-    title: "Discovery Call",
+    title: "Takimi Fillestar",
     description:
-      "We start with a free call to understand your business, goals, and timeline. No fluff — just a straight conversation about what you need and how we can help.",
+      "Fillojmë me një thirrje falas për të kuptuar biznesin, qëllimet dhe afatin tuaj. Pa humbje kohe — vetëm një bisedë e drejtpërdrejtë për atë që ju nevojitet dhe si mund t'ju ndihmojmë.",
     color: "teal" as const,
-    detail: "Free • 30 minutes • No commitment",
+    detail: "Falas · 30 minuta · Pa angazhim",
   },
   {
     number: "02",
     icon: PenTool,
-    title: "Design & Build",
+    title: "Dizajn & Ndërtim",
     description:
-      "We design, build, and keep you in the loop throughout. You'll see progress early and often — no disappearing for weeks and coming back with something wrong.",
+      "Dizajnojmë, ndërtojmë dhe ju mbajmë të informuar gjatë gjithë procesit. Do të shihni progres herët dhe shpesh — pa u zhdukur për javë dhe kthyer me diçka të gabuar.",
     color: "coral" as const,
-    detail: "Weekly updates • Revisions included • Fast turnaround",
+    detail: "Përditësime javore · Rishikime të përfshira · Ekzekutim i shpejtë",
   },
   {
     number: "03",
     icon: Rocket,
-    title: "Launch & Support",
+    title: "Lansim & Mbështetje",
     description:
-      "We handle deployment, testing, and go-live. After launch, we stick around for support so you're never left on your own with a problem.",
+      "Menaxhojmë vendosjen, testimin dhe lansimin. Pas lansimit, qëndrojmë pranë jush për mbështetje — kurrë nuk do të mbeteni vetëm me ndonjë problem.",
     color: "gold" as const,
-    detail: "Smooth launch • Post-launch support • Ongoing maintenance available",
+    detail: "Lansim i qetë · Mbështetje pas lansimit · Mirëmbajtje e vazhdueshme",
   },
 ]
 
 const colorMap = {
-  teal: {
-    icon: "bg-teal/10 text-teal",
-    number: "text-teal",
-    border: "border-teal/20",
-    connector: "bg-teal/20",
-  },
-  coral: {
-    icon: "bg-coral/10 text-coral",
-    number: "text-coral",
-    border: "border-coral/20",
-    connector: "bg-coral/20",
-  },
-  gold: {
-    icon: "bg-gold/10 text-gold",
-    number: "text-gold",
-    border: "border-gold/20",
-    connector: "bg-gold/20",
-  },
+  teal:  { dot: "bg-teal",  number: "text-teal",  line: "bg-teal/30",  detail: "text-teal",  icon: "text-teal"  },
+  coral: { dot: "bg-coral", number: "text-coral", line: "bg-coral/30", detail: "text-coral", icon: "text-coral" },
+  gold:  { dot: "bg-gold",  number: "text-gold",  line: "bg-gold/30",  detail: "text-gold",  icon: "text-gold"  },
 }
 
 export function ProcessSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const isInView = useInView(ref, { once: true, margin: "-80px" })
 
   return (
-    <section id="process" className="py-16 lg:py-20 bg-background">
+    <section id="process" className="py-10 lg:py-14 bg-background">
       <div className="container mx-auto px-6 lg:px-12">
-        {/* Header */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-14"
-        >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-muted text-muted-foreground text-sm font-medium mb-4">
-            How it works
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-            Simple process,{" "}
-            <span className="text-teal">great results</span>
-          </h2>
-        </motion.div>
-
-        {/* Steps */}
-        <div className="relative grid lg:grid-cols-3 gap-6 lg:gap-8">
-          {/* Connector line (desktop only) */}
-          <div className="hidden lg:block absolute top-10 left-[calc(33.33%+1rem)] right-[calc(33.33%+1rem)] h-px bg-border z-0" />
-
+        <div ref={ref} className="max-w-2xl">
           {steps.map((step, index) => {
-            const colors = colorMap[step.color]
+            const c = colorMap[step.color]
+            const isLast = index === steps.length - 1
             return (
               <motion.div
                 key={step.number}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="relative bg-card border border-border rounded-2xl p-7 flex flex-col gap-4"
+                initial={{ opacity: 0, x: -20 }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                transition={{ duration: 0.5, delay: index * 0.18 }}
+                className="relative flex gap-6"
               >
-                {/* Number + Icon row */}
-                <div className="flex items-center justify-between">
-                  <span className={`text-4xl font-black tabular-nums ${colors.number}`}>
-                    {step.number}
-                  </span>
-                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center ${colors.icon}`}>
-                    <step.icon className="w-5 h-5" />
+                {/* Left column: dot + vertical line */}
+                <div className="flex flex-col items-center shrink-0">
+                  <div className={`w-3 h-3 rounded-full shrink-0 mt-1.5 ${c.dot}`} />
+                  {!isLast && (
+                    <div className={`w-px flex-1 mt-2 ${c.line}`} style={{ minHeight: 56 }} />
+                  )}
+                </div>
+
+                {/* Right column: content */}
+                <div className={`${isLast ? "pb-0" : "pb-10"}`}>
+                  {/* Step number + icon */}
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className={`text-xs font-black tabular-nums ${c.number}`}>
+                      {step.number}
+                    </span>
+                    <step.icon className={`w-3.5 h-3.5 ${c.icon}`} />
                   </div>
-                </div>
 
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">{step.description}</p>
-                </div>
+                  {/* Title */}
+                  <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
 
-                <div className={`mt-auto pt-4 border-t ${colors.border}`}>
-                  <p className={`text-xs font-medium ${colors.number}`}>{step.detail}</p>
+                  {/* Description */}
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    {step.description}
+                  </p>
+
+                  {/* Detail */}
+                  <p className={`text-xs font-medium ${c.detail}`}>{step.detail}</p>
                 </div>
               </motion.div>
             )

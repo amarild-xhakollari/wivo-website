@@ -24,21 +24,6 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-8 items-center min-h-screen pt-24 pb-12 lg:pt-32 lg:pb-20">
           {/* Left content - 2 columns */}
           <div className="lg:col-span-2 space-y-8 relative z-10">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/10 text-teal border border-teal/20 text-sm font-medium">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-teal" />
-                </span>
-                Web Design & Development
-              </span>
-            </motion.div>
-
             {/* Headline with tighter letter-spacing */}
             <motion.h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] text-balance"
@@ -47,13 +32,13 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
-              We build websites{" "}
+              Ndërtojmë faqe interneti{" "}
               <span
                 className="bg-gradient-to-r from-teal to-cyan-400 bg-clip-text text-transparent"
               >
-                that grow
+                që rrisin
               </span>{" "}
-              your business
+              biznesin tuaj
             </motion.h1>
 
             {/* Subheadline */}
@@ -63,8 +48,9 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              From landing pages to full web apps — Wivo designs and builds
-              fast, beautiful websites that turn visitors into customers.
+              Nga faqet prezantuese deri te aplikacionet e plota web — Wivo
+              dizajnon dhe ndërton faqe të shpejta dhe të bukura që i kthejnë
+              vizitorët në klientë.
             </motion.p>
 
             {/* CTAs */}
@@ -78,7 +64,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-foreground text-background hover:bg-foreground/90 group px-8 shadow-lg shadow-foreground/10 transition-all hover:shadow-xl hover:shadow-foreground/15"
               >
-                Start Your Project
+                Fillo Projektin Tënd
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
@@ -87,40 +73,10 @@ export function HeroSection() {
                 className="border-border hover:bg-muted group bg-transparent transition-all hover:border-teal/30"
               >
                 <Play className="mr-2 h-4 w-4" />
-                View Our Work
+                Shiko Punën Tonë
               </Button>
             </motion.div>
 
-            {/* Social proof */}
-            <motion.div
-              className="flex items-center gap-6 pt-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <div className="flex -space-x-2">
-                {[
-                  "bg-coral",
-                  "bg-teal",
-                  "bg-gold",
-                  "bg-foreground",
-                ].map((color, i) => (
-                  <motion.div
-                    key={i}
-                    className={`w-8 h-8 rounded-full ${color} border-2 border-background flex items-center justify-center text-xs font-medium text-background shadow-sm`}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.6 + i * 0.1, type: "spring" }}
-                  >
-                    {String.fromCharCode(65 + i)}
-                  </motion.div>
-                ))}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">50+</span>{" "}
-                happy clients
-              </div>
-            </motion.div>
           </div>
 
           {/* Right content - Isometric Scene - 3 columns */}

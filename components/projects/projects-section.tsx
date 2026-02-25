@@ -6,45 +6,45 @@ import Card08, { type Card08Props } from "./card-08"
 
 const projects: Card08Props[] = [
   {
-    title: "E-Commerce Platform",
-    subtitle: "Full-featured online store with real-time inventory and Stripe payments",
+    title: "Platformë E-Commerce",
+    subtitle: "Dyqan online me inventar në kohë reale dhe pagesa Stripe",
     image: "https://picsum.photos/seed/ecommerce/600/400",
-    badge: { text: "Web App", variant: "teal" },
+    badge: { text: "Aplikacion Web", variant: "teal" },
     href: "#",
   },
   {
-    title: "SaaS Dashboard",
-    subtitle: "Analytics dashboard with live charts and role-based access control",
+    title: "Dashboard SaaS",
+    subtitle: "Panel analitik me grafikë live dhe kontroll bazuar në role",
     image: "https://picsum.photos/seed/saas/600/400",
-    badge: { text: "Web App", variant: "teal" },
+    badge: { text: "Aplikacion Web", variant: "teal" },
     href: "#",
   },
   {
-    title: "Restaurant Website",
-    subtitle: "Branded site with online reservations and menu management",
+    title: "Faqe Restoranti",
+    subtitle: "Faqe e brendshme me rezervime online dhe menaxhim menuje",
     image: "https://picsum.photos/seed/restaurant/600/400",
-    badge: { text: "Website", variant: "orange" },
+    badge: { text: "Faqe Web", variant: "orange" },
     href: "#",
   },
   {
-    title: "Real Estate Portal",
-    subtitle: "Property listings with map search and mortgage calculator",
+    title: "Portal Imobiliare",
+    subtitle: "Listim pronash me kërkim hartë dhe kalkulator hipoteke",
     image: "https://picsum.photos/seed/realestate/600/400",
-    badge: { text: "Website", variant: "orange" },
+    badge: { text: "Faqe Web", variant: "orange" },
     href: "#",
   },
   {
-    title: "Fitness App",
-    subtitle: "Mobile-first PWA for workout tracking and nutrition logging",
+    title: "Aplikacion Fitness",
+    subtitle: "PWA mobile-first për gjurmim stërvitjesh dhe regjistrim ushqimi",
     image: "https://picsum.photos/seed/fitness/600/400",
-    badge: { text: "Web App", variant: "teal" },
+    badge: { text: "Aplikacion Web", variant: "teal" },
     href: "#",
   },
   {
     title: "Portfolio Studio",
-    subtitle: "Creative agency portfolio with scroll-driven animations",
+    subtitle: "Portfolio agjensie krijuese me animacione scroll-driven",
     image: "https://picsum.photos/seed/portfolio/600/400",
-    badge: { text: "Website", variant: "orange" },
+    badge: { text: "Faqe Web", variant: "orange" },
     href: "#",
   },
 ]
@@ -54,7 +54,7 @@ export function ProjectsSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   return (
-    <section id="work" className="relative py-16 lg:py-20 bg-background overflow-hidden">
+    <section id="work" className="relative py-10 lg:py-14 bg-background overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section header */}
         <motion.div
@@ -64,18 +64,15 @@ export function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-muted text-muted-foreground text-sm font-medium mb-4">
-            Our Work
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Projects we&apos;ve{" "}
+            Projektet që i kemi{" "}
             <span className="bg-gradient-to-r from-teal to-cyan-400 bg-clip-text text-transparent">
-              brought to life
+              realizuar
             </span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From startups to established brands — websites and web apps we&apos;ve
-            designed and built.
+            Nga startup-et deri te markat e vendosura — faqe interneti dhe aplikacione
+            web që kemi dizajnuar dhe ndërtuar.
           </p>
         </motion.div>
 

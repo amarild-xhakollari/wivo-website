@@ -6,44 +6,44 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "Wivo delivered our new website in two weeks and it looks incredible. We saw a 40% increase in enquiries within the first month.",
+    quote: "Wivo na dorëzoi faqen e re të internetit në dy javë dhe duket e jashtëzakonshme. Pamë një rritje prej 40% në pyetje brenda muajit të parë.",
     author: "Sarah Mitchell",
-    role: "Owner, Mitchell & Co.",
+    role: "Pronare, Mitchell & Co.",
     avatar: "SM",
     color: "bg-teal",
   },
   {
-    quote: "We'd been putting off rebuilding our site for years. Wivo made the whole process painless and the result exceeded every expectation.",
+    quote: "Kishim shtyrë rindërtimin e faqes sonë për vite me radhë. Wivo e bëri të gjithë procesin pa dhimbje koke dhe rezultati tejkaloi çdo pritshmëri.",
     author: "James Okafor",
-    role: "Founder, Okafor Creative",
+    role: "Themelues, Okafor Creative",
     avatar: "JO",
     color: "bg-coral",
   },
   {
-    quote: "Professional, fast, and genuinely great to work with. Our e-commerce revenue doubled in three months after launch.",
+    quote: "Profesionistë, të shpejtë dhe vërtet të këndshëm për të punuar. Të ardhurat tona nga e-commerce u dyfishuan tre muaj pas lansimit.",
     author: "Priya Sharma",
     role: "CEO, Bloom Boutique",
     avatar: "PS",
     color: "bg-gold",
   },
   {
-    quote: "The attention to detail was outstanding. Our new site feels premium and clients notice it immediately.",
+    quote: "Vëmendja ndaj detajeve ishte e jashtëzakonshme. Faqja jonë e re duket premium dhe klientët e vërejnë menjëherë.",
     author: "Tom Reeves",
-    role: "Director, Apex Realty",
+    role: "Drejtor, Apex Realty",
     avatar: "TR",
     color: "bg-teal",
   },
   {
-    quote: "Fast turnaround, clean code, and they actually listened to what we wanted. Highly recommend Wivo.",
+    quote: "Ekzekutim i shpejtë, kod i pastër dhe ata vërtet dëgjuan çfarë donim. Rekomandoj shumë Wivo.",
     author: "Lena Fischer",
-    role: "Founder, FitLife",
+    role: "Themeluse, FitLife",
     avatar: "LF",
     color: "bg-coral",
   },
   {
-    quote: "We went from an outdated WordPress site to a slick, fast web app. Best investment we made this year.",
+    quote: "Kalëm nga një faqe WordPress e vjetëruar në një aplikacion web elegant dhe të shpejtë. Investimi më i mirë i vitit.",
     author: "Nico Andersen",
-    role: "Creative Director, Studio Nord",
+    role: "Drejtor Krijues, Studio Nord",
     avatar: "NA",
     color: "bg-gold",
   },
@@ -82,7 +82,7 @@ export function TestimonialsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section ref={ref} className="py-16 lg:py-20 bg-background relative overflow-hidden">
+    <section ref={ref} className="py-10 lg:py-14 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-teal/5 via-transparent to-coral/5" />
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
@@ -93,15 +93,12 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-muted text-muted-foreground text-sm font-medium mb-4">
-            Testimonials
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            What our{" "}
-            <span className="text-teal">clients say</span>
+            Çfarë thonë{" "}
+            <span className="text-teal">klientët tanë</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Real results from real businesses. Here&apos;s what people say after working with Wivo.
+            Rezultate reale nga biznese reale. Ja çfarë thonë njerëzit pas punës me Wivo.
           </p>
         </motion.div>
       </div>
@@ -151,7 +148,7 @@ export function TestimonialsSection() {
           className="text-center"
         >
           <p className="text-sm text-muted-foreground mb-8">
-            Trusted by businesses we&apos;ve built for
+            Besuar nga bizneset që kemi ndërtuar
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
             {logos.map((logo, index) => (
