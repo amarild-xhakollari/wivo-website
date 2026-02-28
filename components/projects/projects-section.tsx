@@ -6,43 +6,43 @@ import Card08, { type Card08Props } from "./card-08"
 
 const projects: Card08Props[] = [
   {
-    title: "Platformë E-Commerce",
-    subtitle: "Dyqan online me inventar në kohë reale dhe pagesa Stripe",
+    title: "Platforme E-Commerce",
+    subtitle: "Dyqan online me menaxhim inventari ne kohe reale dhe integrim pagesash me Stripe",
     image: "https://picsum.photos/seed/ecommerce/600/400",
     badge: { text: "Aplikacion Web", variant: "teal" },
     href: "#",
   },
   {
     title: "Dashboard SaaS",
-    subtitle: "Panel analitik me grafikë live dhe kontroll bazuar në role",
+    subtitle: "Panel analitik me statistika live dhe akses te kontrolluar sipas roleve",
     image: "https://picsum.photos/seed/saas/600/400",
     badge: { text: "Aplikacion Web", variant: "teal" },
     href: "#",
   },
   {
     title: "Faqe Restoranti",
-    subtitle: "Faqe e brendshme me rezervime online dhe menaxhim menuje",
+    subtitle: "Website modern me rezervime online dhe menaxhim te thjeshte te menus",
     image: "https://picsum.photos/seed/restaurant/600/400",
     badge: { text: "Faqe Web", variant: "orange" },
     href: "#",
   },
   {
     title: "Portal Imobiliare",
-    subtitle: "Listim pronash me kërkim hartë dhe kalkulator hipoteke",
+    subtitle: "Platforme per listim pronash me kerkime te avancuara, harte interaktive dhe kalkulator kredie",
     image: "https://picsum.photos/seed/realestate/600/400",
     badge: { text: "Faqe Web", variant: "orange" },
     href: "#",
   },
   {
     title: "Aplikacion Fitness",
-    subtitle: "PWA mobile-first për gjurmim stërvitjesh dhe regjistrim ushqimi",
+    subtitle: "PWA mobile-first per gjurmim stervitjesh, plane ushqimore dhe progres personal",
     image: "https://picsum.photos/seed/fitness/600/400",
     badge: { text: "Aplikacion Web", variant: "teal" },
     href: "#",
   },
   {
     title: "Portfolio Studio",
-    subtitle: "Portfolio agjensie krijuese me animacione scroll-driven",
+    subtitle: "Website kreativ per agjensi me animacione moderne dhe prezantim premium te projekteve",
     image: "https://picsum.photos/seed/portfolio/600/400",
     badge: { text: "Faqe Web", variant: "orange" },
     href: "#",
@@ -71,8 +71,7 @@ export function ProjectsSection() {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Nga startup-et deri te markat e vendosura — faqe interneti dhe aplikacione
-            web që kemi dizajnuar dhe ndërtuar.
+            Një përzgjedhje projektesh për biznese të reja dhe kompani të konsoliduara, të dizajnuara dhe zhvilluara me përkushtim profesional.
           </p>
         </motion.div>
 

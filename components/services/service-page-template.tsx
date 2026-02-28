@@ -491,11 +491,10 @@ export function ServicePageTemplate({ slug }: { slug: string }) {
                 className="max-w-xl"
               >
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-background mb-4 leading-tight">
-                  Gati për të filluar?
+                 Gati ta çoni idenë tuaj në nivelin tjetër?
                 </h2>
                 <p className="text-background/60 text-lg leading-relaxed">
-                  Na tregoni për projektin tuaj dhe ne do të dërgojmë një propozim falas brenda 24 orësh. Pa asnjë angazhim.
-                </p>
+               Na shkruani për idenë tuaj dhe brenda 24 orësh do të merrni një ofertë falas, pa asnjë detyrim.                </p>
               </motion.div>
 
               <motion.div

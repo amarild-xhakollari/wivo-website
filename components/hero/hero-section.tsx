@@ -48,10 +48,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Nga faqet prezantuese deri te aplikacionet e plota web — Wivo
-              dizajnon dhe ndërton faqe të shpejta dhe të bukura që i kthejnë
-              vizitorët në klientë.
-            </motion.p>
+Nga ideja deri te produkti final — Wivo dizajnon dhe zhvillon faqe e aplikacione web që duken bukur, punojnë shpejt dhe e rrisin biznesin tuaj.            </motion.p>
 
             {/* CTAs */}
             <motion.div

@@ -8,29 +8,29 @@ const steps = [
   {
     number: "01",
     icon: MessageCircle,
-    title: "Takimi Fillestar",
+    title: "Konsultë Fillestare",
     description:
-      "Fillojmë me një thirrje falas për të kuptuar biznesin, qëllimet dhe afatin tuaj. Pa humbje kohe — vetëm një bisedë e drejtpërdrejtë për atë që ju nevojitet dhe si mund t'ju ndihmojmë.",
+      "Nisim me një konsultë falas për të kuptuar biznesin, objektivat dhe afatet tuaja. Një bisedë e qartë dhe konkrete për të parë si mund t’ju ndihmojmë në mënyrën më të mirë.",
     color: "teal" as const,
     detail: "Falas · 30 minuta · Pa angazhim",
   },
   {
     number: "02",
     icon: PenTool,
-    title: "Dizajn & Ndërtim",
+    title: "Dizajn & Zhvillim",
     description:
-      "Dizajnojmë, ndërtojmë dhe ju mbajmë të informuar gjatë gjithë procesit. Do të shihni progres herët dhe shpesh — pa u zhdukur për javë dhe kthyer me diçka të gabuar.",
+      "Dizajnojmë dhe ndërtojmë zgjidhjen tuaj me fokus te performanca dhe përvoja e përdoruesit. Do të merrni përditësime të rregullta dhe mundësi rishikimi gjatë gjithë procesit.",
     color: "coral" as const,
-    detail: "Përditësime javore · Rishikime të përfshira · Ekzekutim i shpejtë",
+    detail: "Përditësime të rregullta · Rishikime të përfshira · Ekzekutim i shpejtë",
   },
   {
     number: "03",
     icon: Rocket,
     title: "Lansim & Mbështetje",
     description:
-      "Menaxhojmë vendosjen, testimin dhe lansimin. Pas lansimit, qëndrojmë pranë jush për mbështetje — kurrë nuk do të mbeteni vetëm me ndonjë problem.",
+      "Kujdesemi për testimin, optimizimin dhe lansimin final. Edhe pas publikimit, mbetemi pranë jush për mbështetje dhe mirëmbajtje të vazhdueshme.",
     color: "gold" as const,
-    detail: "Lansim i qetë · Mbështetje pas lansimit · Mirëmbajtje e vazhdueshme",
+    detail: "Lansim i sigurt · Mbështetje teknike · Mirëmbajtje e vazhdueshme",
   },
 ]
 

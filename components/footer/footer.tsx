@@ -33,7 +33,7 @@ export function Footer() {
                 <Image src="/logo.png" alt="Wivo" width={400} height={160} className="h-28 w-auto brightness-0 invert" unoptimized />
               </div>
               <p className="text-background/60 text-sm leading-relaxed max-w-xs">
-                Dizajnojmë dhe ndërtojmë faqe interneti që ndihmojnë bizneset të rriten. Nga ideja deri te lansimi, ne kemi gjithçka.
+               Nga ideja e parë deri te faqja e plotë online, ne krijojmë zgjidhje web që i japin biznesit tuaj një hap përpara konkurrencës
               </p>
             </motion.div>
           </div>

@@ -45,11 +45,11 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handler)
   }, [])
 
-  const otherLinks = [
-    { label: "Punëtori", anchor: "#work" },
-    { label: "Blog", anchor: "#blog" },
-    { label: "Kontakt", anchor: "#contact" },
-  ]
+ const otherLinks = [
+  { label: "Projekte", anchor: "#work" },   // Punëtori → Projekte (më i kuptueshëm për vizitorin)
+  { label: "Blog", anchor: "#blog" },       // Ruhet si është
+  { label: "Na Kontaktoni", anchor: "#contact" }, // Kontakt → Na Kontaktoni (më personal)
+]
 
   return (
     <>

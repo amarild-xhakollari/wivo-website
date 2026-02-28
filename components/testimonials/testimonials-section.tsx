@@ -6,51 +6,62 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "Wivo na dorëzoi faqen e re të internetit në dy javë dhe duket e jashtëzakonshme. Pamë një rritje prej 40% në pyetje brenda muajit të parë.",
-    author: "Sarah Mitchell",
-    role: "Pronare, Mitchell & Co.",
-    avatar: "SM",
+    quote:
+      "Wivo na dorezoi faqen e re brenda dy javesh dhe rezultati ishte mbi pritshmerite tona. Brenda muajit te pare pame rritje te ndjeshme te kerkesave nga klientet.",
+    author: "Ardit Kelmendi",
+    role: "Pronari, Kelmendi Construction",
+    avatar: "AK",
     color: "bg-teal",
   },
   {
-    quote: "Kishim shtyrë rindërtimin e faqes sonë për vite me radhë. Wivo e bëri të gjithë procesin pa dhimbje koke dhe rezultati tejkaloi çdo pritshmëri.",
-    author: "James Okafor",
-    role: "Themelues, Okafor Creative",
-    avatar: "JO",
+    quote:
+      "E kishim shtyre prej kohesh rindertimin e faqes. Wivo e beri gjithe procesin te thjeshte dhe pa stres. Sot kemi nje prezence online qe na perfaqeson denjesisht.",
+    author: "Elira Hoxha",
+    role: "Themeluese, EH Studio",
+    avatar: "EH",
     color: "bg-coral",
   },
   {
-    quote: "Profesionistë, të shpejtë dhe vërtet të këndshëm për të punuar. Të ardhurat tona nga e-commerce u dyfishuan tre muaj pas lansimit.",
-    author: "Priya Sharma",
-    role: "CEO, Bloom Boutique",
-    avatar: "PS",
+    quote:
+      "Pas lansimit te platformes se re, shitjet online u rriten ndjeshem brenda tre muajve. Profesionalizem dhe komunikim i shkelqyer.",
+    author: "Bleron Krasniqi",
+    role: "CEO, Urban Wear",
+    avatar: "BK",
     color: "bg-gold",
   },
   {
-    quote: "Vëmendja ndaj detajeve ishte e jashtëzakonshme. Faqja jonë e re duket premium dhe klientët e vërejnë menjëherë.",
-    author: "Tom Reeves",
-    role: "Drejtor, Apex Realty",
-    avatar: "TR",
+    quote:
+      "Vemendja ndaj detajeve ishte mbreselenese. Faqja e re duket premium dhe klientet tane e komentojne vazhdimisht pozitivisht.",
+    author: "Gentian Meta",
+    role: "Drejtor, Meta Realty",
+    avatar: "GM",
     color: "bg-teal",
   },
   {
-    quote: "Ekzekutim i shpejtë, kod i pastër dhe ata vërtet dëgjuan çfarë donim. Rekomandoj shumë Wivo.",
-    author: "Lena Fischer",
-    role: "Themeluse, FitLife",
-    avatar: "LF",
+    quote:
+      "Zbatim i shpejte, kod i paster dhe bashkepunim shume i lehte. E rekomandoj Wivo per cdo biznes qe do seriozitet.",
+    author: "Sara Dervishi",
+    role: "Themeluese, FitZone Albania",
+    avatar: "SD",
     color: "bg-coral",
   },
   {
-    quote: "Kalëm nga një faqe WordPress e vjetëruar në një aplikacion web elegant dhe të shpejtë. Investimi më i mirë i vitit.",
-    author: "Nico Andersen",
-    role: "Drejtor Krijues, Studio Nord",
-    avatar: "NA",
+    quote:
+      "Nga nje faqe e vjeteruar kaluam ne nje aplikacion web modern dhe shume te shpejte. Ishte investimi me i mire qe beme kete vit.",
+    author: "Leonard Shala",
+    role: "Drejtor Krijues, Nova Creative",
+    avatar: "LS",
     color: "bg-gold",
   },
 ]
 
+
 const logos = [
-  "Mitchell & Co.", "Okafor Creative", "Bloom Boutique", "Apex Realty", "FitLife", "Studio Nord"
+  "Kelmendi Construction",
+  "Kumara Impiant",
+  "Spanjolli Group",
+  "Dedej Construction",
+ 
 ]
 
 function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
