@@ -11,42 +11,42 @@ const posts: Card08Props[] = [
     subtitle: "Parimet UX dhe zgjedhjet e dizajnit pas çdo projekti që dërgojmë.",
     image: "https://picsum.photos/seed/blog1/600/400",
     badge: { text: "Dizajn", variant: "teal" },
-    href: "#",
+    href: "/blog/si-ndertojme-faqe-qe-konvertojne",
   },
   {
     title: "Pse Biznesi Juaj Ka Nevojë për Faqe Personale në 2026",
     subtitle: "Faqet me template ju kushtojnë klientë. Ja të dhënat.",
     image: "https://picsum.photos/seed/blog2/600/400",
     badge: { text: "Biznes", variant: "orange" },
-    href: "#",
+    href: "/blog/pse-biznesi-juaj-ka-nevoje-per-faqe-personale-2026",
   },
   {
     title: "Next.js vs WordPress: Çfarë Është e Duhura për Ju?",
     subtitle: "Një analizë e drejtpërdrejtë se kur të përdorni secilën platformë.",
     image: "https://picsum.photos/seed/blog3/600/400",
     badge: { text: "Teknologji", variant: "teal" },
-    href: "#",
+    href: "/blog/nextjs-vs-wordpress",
   },
   {
     title: "5 Gabimet që Vrasin Performancën e Faqes",
     subtitle: "Shpejtësia është SEO. Ja çfarë rregullojmë në çdo projekt.",
     image: "https://picsum.photos/seed/blog4/600/400",
     badge: { text: "Performancë", variant: "orange" },
-    href: "#",
+    href: "/blog/5-gabimet-qe-vrasin-performancen-e-faqes",
   },
   {
     title: "Dizajn Mobile-First: Çfarë Nënkupton Realisht",
     subtitle: "Mbi 70% e trafikut është celular. A dizajnoni për të?",
     image: "https://picsum.photos/seed/blog5/600/400",
     badge: { text: "Dizajn", variant: "teal" },
-    href: "#",
+    href: "/blog/dizajn-mobile-first",
   },
   {
     title: "Si t'i Jepni Udhëzime një Agjencie Web (Pa Humbur Kohë)",
     subtitle: "Kurseni javë dyfishimesh me këtë qasje të thjeshtë.",
     image: "https://picsum.photos/seed/blog6/600/400",
     badge: { text: "Procesi", variant: "orange" },
-    href: "#",
+    href: "/blog/si-ti-jepni-udhezimet-nje-agjencie-web",
   },
 ]
 
@@ -131,7 +131,7 @@ export function BlogSection() {
               transition={{ duration: 0.4, delay: index * 0.07 }}
               style={{ minWidth: "min(340px, 80vw)", maxWidth: "min(340px, 80vw)" }}
             >
-              <Card08 {...post} />
+              <Card08 {...post} target="_self" />
             </motion.div>
           ))}
         </div>

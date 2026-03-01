@@ -12,6 +12,7 @@ export interface Card08Props {
     variant: "pink" | "indigo" | "orange" | "teal"
   }
   href?: string
+  target?: string
 }
 
 export default function Card08({
@@ -20,9 +21,10 @@ export default function Card08({
   image = "https://picsum.photos/seed/project1/600/400",
   badge = { text: "Live", variant: "teal" },
   href = "#",
+  target = "_blank",
 }: Card08Props) {
   return (
-    <Link href={href} target="_blank" className="block w-full group">
+    <Link href={href} target={target} className="block w-full group">
       <div
         className={cn(
           "relative overflow-hidden rounded-2xl",
